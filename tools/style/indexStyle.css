@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin:0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size:17px;
+    color: white;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+#showcase{
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: multiply;
+    animation-name: animateslid;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    animation: animateslid 16s ease-in-out infinite;
+}
+
+.content h1{
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.content p{
+    font-size: 20px;
+}
+
+.content .button{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: #777777d5;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.content .button:hover{
+    background: #777777;
+}
+
+@keyframes animateslid {
+    0%, 100%{
+        background-image: url('../../photos/youngs-engineering/index/slpic1.jpg');
+    }
+    33% {
+        background-image: url('../../photos/youngs-engineering/index/slpic2.jpg');
+    }
+    66% {
+        background-image: url('../../photos/youngs-engineering/index/slpic3.jpg');
+    }
+}
