@@ -10,6 +10,12 @@
     --accent-grey: rgba(220, 220, 220, 0.6);
 }
 
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
